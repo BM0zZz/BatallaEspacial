@@ -4,8 +4,8 @@ public class Batalla {
         int totalNaves = 2;
         Controlando control = new Controlando(pasos, totalNaves);
 
-        Thread zorg = new Thread(new Nave("SuperPepina", "SuperPepina", control));
-        Thread blip = new Thread(new Nave("Aldeana", "Aldeana", control));
+        Thread zorg = new Thread(new Nave("zorg", "zorg", control));
+        Thread blip = new Thread(new Nave("blip", "blip", control));
 
         zorg.start();
         blip.start();
